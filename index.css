@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  text-align: center;
+  background-color: #C084FC;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+h1 {
+  padding: 1.5rem;
+  font-size: 2.8rem;
+}
+
+.link {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  width: 20rem;
+  background-color: white;
+  font-size: 1.2rem;
+}
+
+#back {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+}
+
+input[type="number"] {
+  border: 1px solid black;
+}
+
+.label,
+input[type="number"],
+.output,
+.side {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+button {
+  display: block;
+  font-size: 1.2rem;
+  margin: 1rem auto 0;
+  padding: 1rem 1.5rem;
+  background-color: white;
+}
+
+h2 {
+  margin: 1.5rem auto 0;
+  width: 80%;
+}
+
+.output {
+  border: 2px solid black;
+  padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  background-color: white;
+}
+
+label,
+p {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.3rem;
+  margin: 0rem auto;
+}
+
+.container-question {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.side,
+label {
+  margin: 1rem auto;
+  display: block;
+}

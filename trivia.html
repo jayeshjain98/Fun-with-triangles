@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle Quiz</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./trivia.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Triangle Quiz</h1>
+      <a href="./index.html" id="back">Home</a>
+      <form id="trivia-form">
+        <div class="container-question">
+          <p>1. What is a triangle that has an angle more than 90° called?</p>
+          <label
+            ><input type="radio" name="ques1" value="Right Angled" />Right
+            Angled</label
+          >
+          <label
+            ><input type="radio" name="ques1" value="Acute Angled" />Acute
+            Angled</label
+          >
+          <label
+            ><input type="radio" name="ques1" value="Obtuse Angled" />Obtuse
+            Angled</label
+          >
+        </div>
+        <div class="container-question">
+          <p>2. What is the sum of all interior angles of a triangle?</p>
+          <label><input type="radio" name="ques2" value="360°" />360°</label>
+          <label><input type="radio" name="ques2" value="270°" />270°</label>
+          <label><input type="radio" name="ques2" value="180°" />180°</label>
+        </div>
+        <div class="container-question">
+          <p>3. Are triangles with all sides and angles equal possible?</p>
+          <label><input type="radio" name="ques3" value="Yes" />Yes</label>
+          <label><input type="radio" name="ques3" value="No" />No</label>
+          <label><input type="radio" name="ques3" value="Maybe" />Maybe</label>
+        </div>
+        <div class="container-question">
+          <p>
+            4. Which of the following is not a criterion for congruence of
+            triangles?
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="ques4"
+              value="Side, Side, Side (SSS)"
+            />Side, Side, Side (SSS)</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="ques4"
+              value="Angle Side Angle (ASA)"
+            />Angle Side Angle (ASA)</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="ques4"
+              value="Side, Side , Angle (SSA)"
+            />Side, Side , Angle (SSA)</label
+          >
+        </div>
+      </form>
+      <button id="submit">Submit</button>
+      <div id="output" class="output">See score here!</div>
+    </main>
+  </body>
+</html>
