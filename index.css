@@ -1,94 +1,135 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #24ccd8;
+    --off-white: #F3F4F6;
+    --dark-gray: #D1FAE5;
 }
 
-main {
-  text-align: center;
-  background-color: #C084FC;
-  max-width: 500px;
-  margin: 0 auto;
-  padding-bottom: 5rem;
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px
 }
 
-h1 {
-  padding: 1.5rem;
-  font-size: 2.8rem;
+hr {
+    margin: 2rem 0rem;
 }
 
-.link {
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  padding: 2rem 1rem;
-  margin-top: 2rem;
-  margin-left: 1rem;
-  width: 20rem;
-  background-color: white;
-  font-size: 1.2rem;
+/** spaces **/
+
+.margin-md {
+    margin: 2rem;
 }
 
-#back {
-  display: inline-block;
-  color: black;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 1rem;
-  background-color: white;
-  border: 1px solid black;
+/** container **/
+.container {
+    padding: 0rem 1rem;
+    border-radius: 20px;
+    background-color: var(--dark-gray);
 }
 
-input[type="number"] {
-  border: 1px solid black;
+.container-center {
+    max-width: 600px;
+    margin: auto;
+
 }
 
-.label,
-input[type="number"],
-.output,
-.side {
-  font-size: 1.2rem;
-  margin: 0.5rem;
-  text-align: center;
+/** links **/
+.navigation .list-item-inline .link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
 }
 
-button {
-  display: block;
-  font-size: 1.2rem;
-  margin: 1rem auto 0;
-  padding: 1rem 1.5rem;
-  background-color: white;
+.navigation .list-item-inline .link:hover{
+    background-color: var(--primary-color);
+    color: darkgray;
 }
 
-h2 {
-  margin: 1.5rem auto 0;
-  width: 80%;
+.submit:hover{
+    background-color: #fff;
+    color: var(--primary-color);
+}
+.submit {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    display: block;
+    height: 30px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.back-white {
+  background-color: #fff;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    display: block;
+    max-width: 140px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+    
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.list-non-bullet li{
+    margin-bottom: 1rem;
+}
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    padding: .5rem .5rem;
+    color: white;
+    border-bottom-left-radius: 1rem;
+    
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.nav-brand a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .output {
-  border: 2px solid black;
-  padding: 1rem;
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 0.5rem;
-  background-color: white;
+  margin: 1rem 1rem;
+  padding: .5rem .5rem;
+  background-color: var(--dark-gray);
 }
 
-label,
-p {
-  margin-top: 1rem;
-  display: block;
-  font-size: 1.3rem;
-  margin: 0rem auto;
+.section h1 {
+    text-align: center;
+    padding: 2rem 1rem;
+
 }
 
-.container-question {
-  width: 90%;
-  margin: 1rem auto;
-}
-
-.side,
-label {
-  margin: 1rem auto;
-  display: block;
-}

@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>triangle-area</title>
-    <link rel="stylesheet" href="./index.css" />
-    <script defer src="./calculator.js"></script>
-  </head>
-  <body>
-    <main>
-      <h1>Area of Triangle</h1>
-      <a href="./index.html" id="back">Home</a>
-      <!-- 3 sides -->
-      <h2>Calculate by 3 sides</h2>
-      <div class="label">Side 1</div>
-      <input type="number" id="side1" />
-      <div class="label">Side 2</div>
-      <input type="number" id="side2" />
-      <div class="label">Side 3</div>
-      <input type="number" id="side3" />
-      <button id="calc1">Result</button>
-      <div id="output1" class="output">Answer Here</div>
 
-      <!-- base and height -->
-      <h2>Calculate by base and height</h2>
-      <div class="label">Base</div>
-      <input type="number" id="base" />
-      <div class="label">Height</div>
-      <input type="number" id="height" />
-      <button id="calc2">Result</button>
-      <div id="output2" class="output">Answer Here</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>triangle-area</title>
+  <link rel="stylesheet" href="./index.css" />
+  <script defer src="./calculator.js"></script>
+</head>
 
-      <!-- 2 sides 1 angle -->
-      <h2>Calculate by 2 sides and 1 angle</h2>
-      <div class="label">Side 1</div>
-      <input type="number" id="side-a" />
-      <div class="label">Side 2</div>
-      <input type="number" id="side-b" />
-      <div class="label">Included Angle</div>
-      <input type="number" id="angle" />
-      <button id="calc3">Resutl</button>
-      <div id="output3" class="output">Answer Here</div>
-    </main>
-  </body>
+<body>
+  <nav class="navigation">
+    <div class="nav-brand">Fun Triangle</div>
+    <ul class="list-non-bullet nav-pills">
+      <li class="list-item-inline">
+        <a href="./calculator.html" class="link link-active">Area</a>
+      </li>
+      <li class="list-item-inline">
+        <a href="./valid-triangle.html" class="link">isTriangle?</a>
+      </li>
+      <li class="list-item-inline">
+        <a href="./trivia.html" class="link">Quiz</a>
+      </li>
+      <li class="list-item-inline">
+        <a href="./hypotenuse.html" class="link">Find Hypotenuse</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+
+    <section class="section">
+      <div class="container container-center">
+        <h1>Area of Triangle</h1>
+        <h2>Calculate by 3 sides</h2>
+        <div class="label">Side 1</div>
+        <input type="number" id="side1" />
+        <div class="label">Side 2</div>
+        <input type="number" id="side2" />
+        <div class="label">Side 3</div>
+        <input type="number" id="side3" />
+        <button id="calc1" class="submit">Result</button>
+        <div id="output1" class="output">Answer Here</div>
+      </div>
+    </section>
+
+
+
+    <section class="section">
+      <div class="container container-center">
+
+        <h2>Calculate by base and height</h2>
+        <div class="label">Base</div>
+        <input type="number" id="base" />
+        <div class="label">Height</div>
+        <input type="number" id="height" />
+        <button id="calc2" class="submit">Result</button>
+        <div id="output2" class="output">Answer Here</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container-center">
+        <h2>Calculate by 2 sides and 1 angle</h2>
+        <div class="label">Side 1</div>
+        <input type="number" id="side-a" />
+        <div class="label">Side 2</div>
+        <input type="number" id="side-b" />
+        <div class="label">Included Angle</div>
+        <input type="number" id="angle" />
+        <button id="calc3" class="submit">Result</button>
+        <div id="output3" class="output">Answer Here</div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

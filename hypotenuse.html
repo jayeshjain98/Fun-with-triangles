@@ -9,19 +9,40 @@
     <script defer src="./hypotenuse.js"></script>
   </head>
   <body>
+    <nav class="navigation">
+      <div class="nav-brand"><a href="/">Fun Triangle</a></div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a href="./calculator.html" class="link link-active">Area</a>
+        </li>
+        <li class="list-item-inline">
+          <a href="./valid-triangle.html" class="link">isTriangle?</a>
+        </li>
+        <li class="list-item-inline">
+          <a href="./trivia.html" class="link">Quiz</a>
+        </li>
+        <li class="list-item-inline">
+          <a href="./hypotenuse.html" class="link link-active">Find Hypotenuse</a>
+        </li>
+      </ul>
+    </nav>
     <main>
+      <section class="section">
+        <div class="container container-center">
       <h1>Find Hypotenuse</h1>
-      <a href="./index.html" id="back">Home</a>
       <label>
         Side 1
-        <input type="text" class="side" />
       </label>
+        <input type="text" class="side" />
+        <br><br>
       <label>
         Side 2
-        <input type="text" class="side" />
       </label>
-      <button id="check">Check</button>
-      <div id="output" class="output">c = √(a2 + b2)</div>
+        <input type="text" class="side" />
+      <button id="check" class="submit">Check</button>
+      <div id="output" class="output">c = √(a<sup>2</sup> + b<sup>2</sup>)</div>
+      </div>
+      </section>
     </main>
   </body>
 </html>

@@ -19,7 +19,7 @@ function areaAllSides(a, b, c) {
     let s = (a + b + c) / 2;
     output1.innerText = Math.sqrt(s * (s - a) * (s - b) * (s - c));
   } else {
-    output1.innerText = "Invalid";
+    window.alert("Enter valid input.");
   }
 }
 
@@ -34,7 +34,12 @@ calc2.addEventListener("click", () => {
 });
 
 function areaBaseHeight(base, height) {
+  if (base<0 || height<0){
+    window.alert("Enter valid input");
+  }
+  else{
   output2.innerText = (base * height) / 2;
+  }
 }
 
 // 2 Sides 1 Angle
@@ -53,5 +58,10 @@ calc3.addEventListener("click", () => {
 });
 
 function areaTwoSidesOneAngle(a, b, angle) {
+  if (a<0 || b<0 || angle<0) {
+    window.alert("Enter valid input.");
+  }
+  else{
   output3.innerText = (a * b * Math.sin((angle * Math.PI) / 180)) / 2;
+  }
 }

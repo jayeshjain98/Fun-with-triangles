@@ -9,10 +9,27 @@
     <script defer src="./validate.js"></script>
   </head>
   <body>
+    <nav class="navigation">
+      <div class="nav-brand"><a href="/">Fun Triangle</a></div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a href="./calculator.html" class="link ">Area</a>
+        </li>
+        <li class="list-item-inline">
+          <a href="./valid-triangle.html" class="link link-active">isTriangle?</a>
+        </li>
+        <li class="list-item-inline">
+          <a href="./trivia.html" class="link">Quiz</a>
+        </li>
+        <li class="list-item-inline">
+          <a href="./hypotenuse.html" class="link">Find Hypotenuse</a>
+        </li>
+      </ul>
+    </nav>
     <main>
+      <section class="section">
+        <div class="container container-center">
       <h1>Is it a Triangle?</h1>
-      <a href="./index.html" id="back">Home</a>
-      <!-- 2 sides 1 angle -->
       <h2>
         Enter the angles to see if a triangle is possible.
       </h2>
@@ -22,8 +39,11 @@
       <input type="number" id="angle-B" />
       <div class="label">Angle 3</div>
       <input type="number" id="angle-C" />
-      <button id="check">Check</button>
+      <button id="check" class="submit">Check</button>
       <div id="output" class="output">Answer Here</div>
+    </div>
+  </section>
+
     </main>
   </body>
 </html>
