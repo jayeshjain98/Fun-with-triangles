@@ -7,7 +7,7 @@ checkBtn.addEventListener("click", getHypotenuse);
 function getHypotenuse() {
   let num1 = parseFloat(sides[0].value);
   let num2 = parseFloat(sides[1].value);
-  if (num1<0 || num2<0){
+  if (num1<=0 || num2<=0){
     window.alert("Enter valid input");
   }
   else{
